@@ -8,5 +8,5 @@ initial_state = {
 
 result = graph.invoke(initial_state)
 
-print("\nFinal State:")
-print(result)
+print("\nVisualization created:")
+print(type(result.get("visualization")))
