@@ -106,3 +106,52 @@ The agent understands the question, checks the available dataset schema, generat
                                 ┌─────────────────┐
                                 │ AI Explanation  │
                                 └─────────────────┘
+---
+
+## 🛠️ Tech Stack
+
+### Programming Language
+- **Python 3.11** — Core application development
+
+### AI & Agent Framework
+- **LangGraph** — Builds and manages the AI agent workflow
+- **Groq API** — Provides LLM capabilities for SQL generation, SQL correction, and result explanation
+
+### Data & Database
+- **Pandas** — CSV processing and DataFrame operations
+- **SQLite** — Stores uploaded CSV data and executes generated SQL queries
+
+### Visualization & UI
+- **Plotly** — Interactive data visualizations
+- **Streamlit** — Web-based user interface
+
+### Environment & Version Control
+- **python-dotenv** — Environment variable management
+- **Git & GitHub** — Version control and project management
+
+---
+
+## 🔄 LangGraph Workflow
+
+The agent is implemented as a state-based workflow using LangGraph.
+
+```text
+START
+  ↓
+Check User Request
+  ↓
+Check Dataset Schema
+  ↓
+Generate SQL
+  ↓
+Validate SQL
+  ↓
+Execute SQL
+  ↓
+Create DataFrame
+  ↓
+Create Visualization
+  ↓
+Explain Result
+  ↓
+END
